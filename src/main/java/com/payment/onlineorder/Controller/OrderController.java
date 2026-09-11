@@ -29,4 +29,9 @@ public class OrderController {
     public ResponseEntity<List<MenuItem>> fetchMenuId(){
         return  ResponseEntity.ok(orderService.fetchMenuId());
     }
+
+    @GetMapping("/ids")
+    public ResponseEntity<List<MenuItem>> fetchMenuId1(){
+        return  ResponseEntity.ok(orderService.fetchMenuId());
+    }
 }
